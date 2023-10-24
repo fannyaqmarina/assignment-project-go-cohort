@@ -15,10 +15,10 @@ func init() {
 func main() {
 
 	r := gin.Default()
-	r.POST("/order", controllers.OrderCreate)
-	r.GET("/order", controllers.OrderGet)
-	r.GET("/order/:orderId", controllers.OrderGetOne)
-	r.PUT("/order/:orderId", controllers.OrderUpdate)
-	r.DELETE("/order/:orderId", controllers.OrderDelete)
+	r.POST("/orders", controllers.OrderCreate)
+	r.GET("/orders", controllers.OrderGet)
+	r.GET("/orders/:orderId", controllers.OrderGetOne)
+	r.PUT("/orders/:orderId", controllers.OrderUpdate)
+	r.DELETE("/orders/:orderId", controllers.OrderDelete)
 	r.Run()
 }
